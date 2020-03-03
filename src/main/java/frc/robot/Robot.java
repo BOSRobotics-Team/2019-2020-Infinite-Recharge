@@ -100,7 +100,7 @@ public static Winch winch;
 
     @Override
     public void autonomousInit() {
-        autonomousCommand = chooser.getSelected();
+        autonomousCommand = new AutonomousCommand();
         // schedule the autonomous command (example)
         if (autonomousCommand != null) autonomousCommand.start();
     }
